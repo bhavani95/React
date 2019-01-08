@@ -28,6 +28,7 @@ class Header extends React.Component {
 
         <div>
             <h1>This is Header</h1>
+            <h2> Header followed by Content</h2>
         </div>
    );
 }

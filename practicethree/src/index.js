@@ -7,7 +7,7 @@ const App = () => {
 <div className="ui container comments">
             <div className="comment">
                 <a href="/" className="avatar">
-                    <img alt="avatar" src="https://www.freepik.com/free-photo/hair-style-street-fashion-beautiful-girl_1069697.htm" />
+                    <img alt="avatar" src="img.jpg" height='30' width='30' />
                 </a>
                 <div className="content">
                     <a href="/" className="author">

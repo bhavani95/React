@@ -1,5 +1,7 @@
 //This file is to show the new features introduced in es6.
 
+//use https://webapplog.com/es6/
+
 //import react and ReactDOM
 import React from 'react';
 import ReactDOM from 'react-dom';
@@ -33,6 +35,9 @@ function fullname(a, b) {
 
     return `${a} ${b}`;
 }
+
+
+
 
 //render
 

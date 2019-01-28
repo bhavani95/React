@@ -33,8 +33,10 @@ class App extends React.Component {
                     <br /> 
 
                     User Name:
-                <input type="text" value={this.state.text} onChange={(e) => { this.setState({ text: e.target.value }) }} /><br/>
-                    Password  :<input type="password" value={this.state.pwd} onChange={(e) => { this.setState({ pwd: e.target.value }) }} />  <br/>
+                <input type="text" value={this.state.text} onChange={(e) => { this.setState({ text: e.target.value }) }} /><br />
+
+                    Password  :<input type="password" value={this.state.pwd} onChange={(e) => { this.setState({ pwd: e.target.value }) }} />  <br />
+
                     <input type="submit" value={this.state.text} onClick={this.onSubmit} value="Submit" />  
     
                        

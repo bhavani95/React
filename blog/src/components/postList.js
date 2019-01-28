@@ -23,8 +23,9 @@ class PostList extends React.Component {
                             <h2>{post.title}</h2>
                             <p>{post.body}</p>
                         </div>
+                        <div ><p><b>By<i><Author id={post.userId} /></i></b></p></div>
                     </div>
-                    <div>Author:<Author id={post.userId}/></div>
+                    
 
                 </div>
             );

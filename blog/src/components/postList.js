@@ -1,6 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { fetchPosts } from '../actions';
+import Author from './author';
 
 class PostList extends React.Component {
     componentDidMount() {
@@ -15,15 +16,16 @@ class PostList extends React.Component {
         return this.props.posts.map(post => {
             return (
                 <div className="item" key={post.id}>
-                    <i className="massive middle aligned circle user icon"/>
+                    <i className="massive middle aligned circle user icon" />
 
                     <div className="content" >
                         <div className="description">
-                          <h2>{post.title}</h2>
-                        <p>{post.body}</p>
+                            <h2>{post.title}</h2>
+                            <p>{post.body}</p>
                         </div>
                     </div>
-                       
+                    <div>Author:<Author id={post.userId}/></div>
+
                 </div>
             );
         });
@@ -31,18 +33,15 @@ class PostList extends React.Component {
 
     render() {
 
-        console.log(this.props.posts);
-
         return (<div className="ui relaxed divided list">{this.renderList()}</div>);
     }
 
-    
+
 }
 
 const mapStateToProps = (state) => {
-    //console.log(state.post);
 
     return { posts: state.post };
 };
 
-export default connect(mapStateToProps,{ fetchPosts })(PostList);
+export default connect(mapStateToProps, { fetchPosts })(PostList);

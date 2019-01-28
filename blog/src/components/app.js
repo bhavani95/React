@@ -1,4 +1,3 @@
-// JavaScript source code
 import React from 'react';
 import PostList from './postList';
 
@@ -10,10 +9,10 @@ class App extends React.Component {
         return (
             <div className="ui container" >
 
-                <PostList/>
+                <PostList />
 
             </div>
-            );
+        );
     }
 }
 

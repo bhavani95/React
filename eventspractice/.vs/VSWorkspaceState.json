@@ -3,8 +3,9 @@
     "",
     "\\public",
     "\\src",
+    "\\src\\axios",
     "\\src\\components"
   ],
-  "SelectedNode": "\\src\\components\\SearchBar.js",
+  "SelectedNode": "\\src\\components\\images.js",
   "PreviewInSolutionExplorer": false
 }

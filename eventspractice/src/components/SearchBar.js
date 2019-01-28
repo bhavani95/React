@@ -23,11 +23,13 @@ class SearchBar extends React.Component {
         console.log("Input got clicked");
     }*/
 
-    onFormSubmit= (e) => {
+    onFormSubmit = (e) => {
+        
         e.preventDefault();
+        
 
         this.props.onSubmit(this.state.term);
-        //console.log(this.state.term);
+        
 
 
     }
@@ -39,7 +41,9 @@ class SearchBar extends React.Component {
                         Image Search
                         <input type="text"
                             value={this.state.term}
-                            onChange={(e) => { this.setState({ term: e.target.value }) }} />
+                            onChange={(e) => { this.setState({ term: e.target.value })}
+                            } />
+
                         </div>
                 </form>
                 </div>

@@ -13,7 +13,7 @@ class Author extends React.Component {
     render() {
 
         const AuthorName = this.props.auth.find(user => user.id === this.props.id);
-        return <div>{AuthorName && AuthorName.name}</div>;
+        return <div>{AuthorName&&AuthorName.name}</div>;
     }
 }
 

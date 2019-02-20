@@ -1,0 +1,12 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\src",
+    "\\src\\actions",
+    "\\src\\components",
+    "\\src\\components\\streams",
+    "\\src\\reducers"
+  ],
+  "SelectedNode": "\\src\\components\\streams\\StreamCreate.js",
+  "PreviewInSolutionExplorer": false
+}

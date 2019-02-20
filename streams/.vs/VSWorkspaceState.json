@@ -1,0 +1,12 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\client",
+    "\\client\\public",
+    "\\client\\src",
+    "\\client\\src\\components",
+    "\\client\\src\\components\\streams"
+  ],
+  "SelectedNode": "\\client\\src\\components\\streams\\StreamCreate.js",
+  "PreviewInSolutionExplorer": false
+}

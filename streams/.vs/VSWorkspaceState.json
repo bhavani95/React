@@ -1,12 +1,16 @@
 {
   "ExpandedNodes": [
     "",
+    "\\api",
     "\\client",
     "\\client\\public",
     "\\client\\src",
+    "\\client\\src\\actions",
+    "\\client\\src\\apis",
     "\\client\\src\\components",
-    "\\client\\src\\components\\streams"
+    "\\client\\src\\components\\streams",
+    "\\client\\src\\reducers"
   ],
-  "SelectedNode": "\\client\\src\\components\\streams\\StreamCreate.js",
+  "SelectedNode": "\\client\\src\\components\\streams\\StreamList.js",
   "PreviewInSolutionExplorer": false
 }

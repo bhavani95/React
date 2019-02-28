@@ -3,10 +3,11 @@
     "",
     "\\src",
     "\\src\\actions",
+    "\\src\\apis",
     "\\src\\components",
     "\\src\\components\\streams",
     "\\src\\reducers"
   ],
-  "SelectedNode": "\\src\\components\\streams\\StreamCreate.js",
+  "SelectedNode": "\\src\\actions\\index.js",
   "PreviewInSolutionExplorer": false
 }

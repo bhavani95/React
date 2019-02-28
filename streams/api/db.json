@@ -1,0 +1,30 @@
+{
+  "streams": [
+    {
+      "title": "streamone",
+      "description": "this is a great stream!",
+      "id": 1
+    },
+    {
+      "title": "stream2",
+      "description": "description",
+      "id": 2
+    },
+    {
+      "title": "bhavani",
+      "description": "kuppagiri",
+      "id": 7
+    },
+    {
+      "title": "this is my stream",
+      "description": "this was created by me !",
+      "id": 8
+    },
+    {
+      "title": "hello",
+      "description": "bhavani",
+      "userId": "101535097915178380346",
+      "id": 9
+    }
+  ]
+}

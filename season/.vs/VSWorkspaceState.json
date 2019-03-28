@@ -1,8 +1,9 @@
 {
   "ExpandedNodes": [
     "",
+    "\\public",
     "\\src"
   ],
-  "SelectedNode": "\\src\\index.js",
+  "SelectedNode": "\\src\\Spinner.js",
   "PreviewInSolutionExplorer": false
 }

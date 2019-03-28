@@ -11,6 +11,6 @@
     "\\client\\src\\components\\streams",
     "\\client\\src\\reducers"
   ],
-  "SelectedNode": "\\client\\src\\components\\streams\\StreamList.js",
+  "SelectedNode": "\\api\\db.json",
   "PreviewInSolutionExplorer": false
 }

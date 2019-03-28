@@ -8,6 +8,6 @@
     "\\src\\components\\streams",
     "\\src\\reducers"
   ],
-  "SelectedNode": "\\src\\actions\\index.js",
+  "SelectedNode": "\\src\\components\\streams\\StreamDelete.js",
   "PreviewInSolutionExplorer": false
 }

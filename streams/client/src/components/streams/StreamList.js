@@ -1,5 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import { Link} from 'react-router-dom';
 import { fetchStreams } from '../../actions/index';
 
 class StreamList extends React.Component {
@@ -9,13 +10,38 @@ class StreamList extends React.Component {
         this.props.fetchStreams();
     }
 
+    renderCreate() {
+
+        if (this.props.isSignedIn) {
+
+            return (
+              
+                <div>
+                    <Link to="/streams/create" className="ui button primary">
+                        Create Stream
+                    </Link>
+                </div>
+                
+                
+                );
+
+        }
+
+
+    }
+
     renderAdmin(stream) {
 
         if (stream.userId === this.props.currentUserId) {
 
             return <div className="ui right floated content">
-                <button className="ui button primary">Edit</button>
-                <button className="ui button negative">Delete</button>
+                <Link to={`/streams/edit/${stream.id}`} className="ui button primary" >
+                    Edit
+                    </Link>
+                
+                <Link to={`/streams/delete/${stream.id}`} className="ui button negative">
+                    Delete
+                    </Link>
 
             </div>
         }
@@ -31,19 +57,21 @@ class StreamList extends React.Component {
 
             return (
 
+               
+
                 <div className="item" key={stream.id}>
                     {this.renderAdmin(stream)}
                     <i className="large middle aligned icon camera" />
                     <div className="content">
-                        {stream.title}
+                        <Link to={`streams/show/${stream.id}`} className="Header">
+                            {stream.title}
+                            </Link>
                     </div>
                     <div className="description">
                         {stream.description}
                     </div>
-
                    
-
-                </div>
+                    </div> 
 
 
             );
@@ -56,6 +84,7 @@ class StreamList extends React.Component {
             <div>
                 <h2>Streams</h2>
                 <div className="ui celled list">{this.renderList()}</div>
+                <div className="ui right floated content">{this.renderCreate()}</div>
 
             </div>
 
@@ -67,7 +96,8 @@ class StreamList extends React.Component {
 const mapStateToProps = (state) => {
     return {
         streams: Object.values(state.streams),
-        currentUserId: state.auth.userId
+        currentUserId: state.auth.userId,
+        isSignedIn: state.auth.isSignedIn
     };
 };
 

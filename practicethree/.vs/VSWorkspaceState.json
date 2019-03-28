@@ -1,7 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\public",
+    "\\src"
   ],
-  "SelectedNode": "\\public",
+  "SelectedNode": "\\src\\approvalCard.js",
   "PreviewInSolutionExplorer": false
 }

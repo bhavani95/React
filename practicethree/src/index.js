@@ -1,79 +1,29 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import faker from 'faker';
-
+import Comp from './Comp';
+import Card from './approvalCard';
 const App = () => {
     return (
-        <div>
-<div className="ui container comments">
-            <div className="comment">
-                <a href="/" className="avatar">
-                        <img alt="avatar" src={faker.image.avatar()} />
-                </a>
-                <div className="content">
-                    <a href="/" className="author">
-                        Bhavani
-                    </a>
-                    <div className="metadata">
-                        <span className="date"> Todat at 11:43PM</span>
-                    </div>
-                    <div>
-
-                        <div className="text">Excellent!</div>
-                    </div>
-                </div>
-
-                </div>
-            </div>
-
-   
-
-    <div className="ui container comments">
-        <div className="comment">
-                    <a href="/" className="avatar">
-                        <img alt="avatar" src={faker.image.avatar()} />
-
-                    </a>
-            <div className="content">
-                <a href="/" className="author">
-                    Prabha
-                    </a>
-                <div className="metadata">
-                    <span className="date"> Todat at 11:55PM</span>
-                </div>
-                <div>
-
-                    <div className="text">Amazing!</div>
-                </div>
-            </div>
-
-        </div>
-    </div>
-
        
+            <div className="ui container comments">
+                <Card>
+                    <Comp auth="Bhavani" time="Today at 01:00 PM" Comment="Excellent!" avatar={faker.image.avatar()} />
+                </Card>
 
-<div className="ui container comments">
-    <div className="comment">
-        <a href="/" className="avatar">
-                        <img alt="avatar" src={faker.image.avatar()} />
-        </a>
-        <div className="content">
-            <a href="/" className="author">
-                Ram
-                    </a>
-            <div className="metadata">
-                <span className="date"> Todat at 12:32PM</span>
-            </div>
-            <div>
+                <Card>
+                
+                    <Comp auth="Supraja" time="Today at 10:00 PM" Comment="Good Examples" avatar={faker.image.avatar()} />
+                </Card>
+                <Card>
+                <Comp auth="Vijay" time="Today at 09:00 AM" Comment="Good Blog!" avatar={faker.image.avatar()}/>
 
-                <div className="text">Nice Blog Post!</div>
-            </div>
+                </Card>
+
+    
         </div>
 
-    </div>
-        </div>
 
-        </div>
 
         );
 };

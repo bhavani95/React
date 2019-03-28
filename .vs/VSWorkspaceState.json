@@ -3,8 +3,10 @@
     "",
     "\\practicethree",
     "\\practicethree\\public",
-    "\\practicethree\\src"
+    "\\practicethree\\src",
+    "\\streams",
+    "\\streams\\api"
   ],
-  "SelectedNode": "\\practicethree\\src\\index.js",
+  "SelectedNode": "\\streams\\api\\db.json",
   "PreviewInSolutionExplorer": false
 }
